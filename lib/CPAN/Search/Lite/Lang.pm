@@ -1,7 +1,7 @@
 package CPAN::Search::Lite::Lang;
 use strict;
 use warnings;
-our $VERSION = 0.76;
+our $VERSION = 0.77;
 
 use utf8;
 use base qw(Exporter);
@@ -60,7 +60,7 @@ used as
    load(lang => $lang, pages => $pages, chaps_desc => $chaps_desc);
 
 which will, for example, take the data structure C<$pages> and
-populate C<$pages->{$lang}> with the appropriate C<$page> from
+populate C<< $pages->{$lang} >> with the appropriate C<$page> from
 the requested C<$pages> from C<CPAN::Search::Lite::Lang::$lang.pm>.
 At present the available data structures are:
 
